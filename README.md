@@ -1,6 +1,17 @@
 # Small demo project
 
-Assumes your database is hosted locally on XAMPP with the database name `jimsdvds`
+## How to use
+With git installed, open a command line and type
+```
+git clone https://github.com/tafedaniel/jims_dvds.git
+```
+
+## A word of caution
+For the sake of readability of the code, this example is missing some fundamental details required of any app that faces real users - these are simple to implement but
+- Output to the page of potential user data is not escaped (making much of the code vulnerable to XSS exploits)
+
+## What database do you need?
+Assumes your database is hosted locally on XAMPP with the database name `jimsdvds` - change the database connection details in `core/Database.php`
 
 ```
 CREATE TABLE `dvds` (
