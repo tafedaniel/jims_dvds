@@ -1,6 +1,13 @@
 # Small demo project
 
-Assumes your database is hosted locally on XAMPP with the database name `jimsdvds`
+## How to use
+With git installed, open a command line and type
+```
+git clone https://github.com/tafedaniel/jims_dvds.git
+```
+
+## What database do you need?
+Assumes your database is hosted locally on XAMPP with the database name `jimsdvds` - change the database connection details in `core/Database.php`
 
 ```
 CREATE TABLE `dvds` (
