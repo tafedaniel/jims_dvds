@@ -7,7 +7,7 @@ git clone https://github.com/tafedaniel/jims_dvds.git
 ```
 
 ## A word of caution
-For the sake of readability of the code, this example is missing some fundamental details required of any app that faces real users - these are simple to implement but
+For the sake of readability of the code, this example is missing some fundamental details required of any app that faces real users - these are simple to implement, but be aware:
 - Output to the page of potential user data is not escaped (making much of the code vulnerable to XSS exploits)
 
 ## What database do you need?

@@ -1,6 +1,6 @@
 <?php
 class View {
-    public static function render($view, $data = []) {
+    public static function show($view, $data = []) {
         extract($data);
         require __DIR__ . '/../views/' . $view . '.php';
     }
