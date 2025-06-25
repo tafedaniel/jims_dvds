@@ -1,16 +1,17 @@
 # Small demo project
 
 ## How to use
-With git installed, open a command line and type
+With git installed, open a command line, navigate to the desired directory, and type:
 ```
 git clone https://github.com/tafedaniel/jims_dvds.git
 ```
+You will also need to create/import the database (SQL at end of this page).
 
-## A word of caution
+### A word of caution
 For the sake of readability of the code, this example is missing some fundamental details required of any app that faces real users - these are simple to implement, but be aware:
-- User input is not escaped before being rendered (making the website vulnerable to XSS attacks)
-- User input is not validated (users will not be informed when they enter invalid data)
-- Database errors are not handled — things will just fail if they fail and results will be unpredictable if they do. This should be handled with explicit error checking or through try/catch blocks.
+- *User input is not escaped before being rendered* (making the website vulnerable to XSS attacks)
+- *User input is not validated* (users will not be informed when they enter invalid data)
+- *Database errors are not handled* — things will just fail if they fail and results will be unpredictable if they do. This should be handled with explicit error checking or through try/catch blocks.
 
 ## What database do you need?
 Assumes your database is hosted locally on XAMPP with the database name `jimsdvds` - change the database connection details in `core/Database.php`
